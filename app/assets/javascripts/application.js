@@ -11,11 +11,15 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery-ui
 //= require jquery_ujs
-//= require turbolinks
+
+//= require typed.min
 
 //= require plugins
 //= require scripts
 //= require main
+
+//= require turbolinks
 
 //= require_tree .

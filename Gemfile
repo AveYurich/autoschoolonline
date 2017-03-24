@@ -32,12 +32,16 @@ gem 'sass-rails', '~> 5.0'
 # Add FontAwesome
 # See more at: https://github.com/FortAwesome/font-awesome-sass
 gem 'font-awesome-sass', '~> 4.7.0'
+# Localization
+# See more at: https://github.com/svenfuchs/rails-i18n
+gem 'rails-i18n', '~> 5.0.0'
 # Use Unicorn as the app server
 gem 'unicorn'
 
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-ui-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

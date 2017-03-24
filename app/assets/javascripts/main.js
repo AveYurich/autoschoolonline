@@ -50,11 +50,11 @@ $('.gl-footer-widget, .gl-same-height').matchHeight();
 /* ==================================================================
                     SELECT2
 ================================================================== */
-$(".gl-category-dropdown-selection").select2({
-  placeholder: "Category",
-  minimumResultsForSearch: Infinity,
-  dropdownCssClass: "gl-big-search-drop"
-});
+// $(".gl-category-dropdown-selection").select2({
+//   placeholder: "Категория",
+//   minimumResultsForSearch: Infinity,
+//   dropdownCssClass: "gl-big-search-drop"
+// });
 
  $(".gl-realestate-category-selection").select2({
   placeholder: "Category",

@@ -1,0 +1,61 @@
+:scss
+  .gl-hero-img-wrapper {
+    background: url('assets/hero-bg.jpg') center center no-repeat;
+    background-size: cover
+  }
+
+/ HERO IMAGE
+%section.gl-hero-img-wrapper
+  .container
+    .row
+      .gl-elements-content-wrapper
+        #typed-strings
+          %p
+            = t('baner.main_text').html_safe
+          -#%p
+          -#  Best
+          -#  %span.gl-color-text directory
+          -#  themes ever
+          -#%p
+          -#  Find The
+          -#  %span.gl-color-text Best Places
+          -#  In Your City
+        %h2#gl-slogan.gl-hero-text-heading
+        %p.gl-hero-text-paragraph
+          = t('baner.paragraph')
+        / DIRECTORY FORM
+        .gl-directory-searchbar.gl-bz-directory-searchbar
+          %form#gl-bz-directory-form{ action: '#' }
+            %fieldset
+              %input#gl-business-keyword.gl-directory-input{ name: 'gl-business-keyword', placeholder: "#{t('baner.first_input')}", type: 'text' }
+              %input#gl-search-location.gl-directory-input{ name: 'gl-search-location', placeholder: "#{t('baner.second_input')}", type: 'text' }
+              .gl-business-category.gl-category-dropdown
+                %select.gl-category-dropdown-selection
+                  %option  
+                  %option{ value: 'Corp' } Corporate
+                  %option{ value: 'Pub' } Public
+                  %option{ value: 'Int' } International
+            %button.gl-icon-btn{ type: 'submit' }
+              %i.fa.fa-search
+              = t('baner.search')
+        / END
+        .gl-scroll-down-wrapper
+          %a.gl-scroll-down{ href: '#gl-next-section' }
+            %i.ion-chevron-down
+/ HERO IMAGE END
+
+:javascript
+  $("#gl-slogan").typed({
+      stringsElement: $('#typed-strings'),
+      startDelay: 100,
+      typeSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+      contentType: 'html',
+      loopCount: false
+  });
+  $(".gl-category-dropdown-selection").select2({
+    placeholder: "#{t('baner.seelct')}",
+    minimumResultsForSearch: Infinity,
+    dropdownCssClass: "gl-big-search-drop"
+  });
