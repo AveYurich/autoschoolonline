@@ -1,0 +1,8 @@
+ru:
+  baner:
+    main_text: "ВЫБЕРИ ДЛЯ СЕБЯ <span class='gl-color-text'>ЛУЧШУЮ</span> АВТОШКОЛУ"
+    paragraph: "поиск среди 1500 автошкол по всей Украине"
+    first_input: 'Название'
+    second_input: 'Город'
+    seelct: 'Категория'
+    search: 'Поиск'

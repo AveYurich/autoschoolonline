@@ -11,9 +11,7 @@
       .gl-elements-content-wrapper
         #typed-strings
           %p
-            ВЫБЕРИ ДЛЯ СЕБЯ
-            %span.gl-color-text ЛУЧШУЮ
-            АВТОШКОЛУ
+            = t('baner.main_text').html_safe
           -#%p
           -#  Best
           -#  %span.gl-color-text directory
@@ -23,13 +21,14 @@
           -#  %span.gl-color-text Best Places
           -#  In Your City
         %h2#gl-slogan.gl-hero-text-heading
-        %p.gl-hero-text-paragraph поиск среди 1500 автошкол по всей Украине
+        %p.gl-hero-text-paragraph
+          = t('baner.paragraph')
         / DIRECTORY FORM
         .gl-directory-searchbar.gl-bz-directory-searchbar
           %form#gl-bz-directory-form{ action: '#' }
             %fieldset
-              %input#gl-business-keyword.gl-directory-input{ name: 'gl-business-keyword', placeholder: 'Название', type: 'text' }
-              %input#gl-search-location.gl-directory-input{ name: 'gl-search-location', placeholder: 'Город', type: 'text' }
+              %input#gl-business-keyword.gl-directory-input{ name: 'gl-business-keyword', placeholder: "#{t('baner.first_input')}", type: 'text' }
+              %input#gl-search-location.gl-directory-input{ name: 'gl-search-location', placeholder: "#{t('baner.second_input')}", type: 'text' }
               .gl-business-category.gl-category-dropdown
                 %select.gl-category-dropdown-selection
                   %option  
@@ -38,7 +37,7 @@
                   %option{ value: 'Int' } International
             %button.gl-icon-btn{ type: 'submit' }
               %i.fa.fa-search
-              Поиск
+              = t('baner.search')
         / END
         .gl-scroll-down-wrapper
           %a.gl-scroll-down{ href: '#gl-next-section' }
@@ -56,7 +55,7 @@
       loopCount: false
   });
   $(".gl-category-dropdown-selection").select2({
-    placeholder: "Категория",
+    placeholder: "#{t('baner.seelct')}",
     minimumResultsForSearch: Infinity,
     dropdownCssClass: "gl-big-search-drop"
   });

@@ -1,0 +1,8 @@
+uk:
+  baner:
+    main_text: "ОБЕРИ ДЛЯ СЕБЕ <span class='gl-color-text'>КРАЩУ</span> АВТОШКОЛУ"
+    paragraph: "пошук серед 1500 автошкіл по всій Україні"
+    first_input: 'Назва'
+    second_input: 'Місто'
+    seelct: 'Категорія'
+    search: 'Пошук'

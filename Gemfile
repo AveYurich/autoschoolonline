@@ -32,6 +32,9 @@ gem 'sass-rails', '~> 5.0'
 # Add FontAwesome
 # See more at: https://github.com/FortAwesome/font-awesome-sass
 gem 'font-awesome-sass', '~> 4.7.0'
+# Localization
+# See more at: https://github.com/svenfuchs/rails-i18n
+gem 'rails-i18n', '~> 5.0.0'
 # Use Unicorn as the app server
 gem 'unicorn'
 
