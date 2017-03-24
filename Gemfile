@@ -21,8 +21,17 @@ gem 'coffee-rails', '~> 4.2'
 
 # https://docs.mongodb.com/ruby-driver/master/tutorials/6.0.0/mongoid-installation/
 gem 'mongoid', '~> 6.0.0'
+# Add haml
 # https://github.com/haml/haml/tree/rails_4.1.0.rc1
 gem 'haml-rails'
+# Add Bootstrap
+# See more at: https://github.com/twbs/bootstrap-sass
+gem 'bootstrap-sass', '~> 3.3.6'
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 5.0'
+# Add FontAwesome
+# See more at: https://github.com/FortAwesome/font-awesome-sass
+gem 'font-awesome-sass', '~> 4.7.0'
 # Use Unicorn as the app server
 gem 'unicorn'
 
@@ -45,6 +54,8 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'pry-rails'
+  # See more at: https://github.com/presidentbeef/brakeman
+  gem 'brakeman', :require => false
 end
 
 group :development do
@@ -55,7 +66,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   # Use sqlite3 as the database for Active Record
-  # gem 'sqlite3'
+  gem 'sqlite3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
