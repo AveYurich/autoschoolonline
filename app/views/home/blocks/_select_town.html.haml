@@ -1,1 +1,130 @@
-select town
+:scss
+  .select_town {
+    padding-top: 15px;
+    padding-bottom: 25px;
+    .container {
+      .row {
+        .no-margin {
+          margin: 0;
+        }
+        div {
+          a {
+            width: 100%;
+            .text {
+              float: left;
+            }
+            .counter {
+              float: right;
+            }
+          }
+        }
+      }
+      .titles {
+        padding-bottom: 15px;
+      }
+      .buttons {
+        padding-bottom: 15px;
+      }
+    }
+  }
+%section.select_town
+  .container
+    .row.titles
+      %p.gl-hero-text-paragraph.text-center.no-margin
+        = t('select_town.title')
+      %p.gl-hero-text-paragraph.text-center.no-margin
+        = t('select_town.choose')
+    .row.buttons
+      .col-xs-12.col-md-4
+        = link_to '#', class: 'gl-btn gl-large-btn gl-btn-color-1' do
+          %span.text
+            = t('select_town.towns.kyiv')
+          %span.counter
+            315
+        = link_to '#', class: 'gl-btn gl-large-btn gl-btn-color-1' do
+          %span.text
+            = t('select_town.towns.kharkiv')
+          %span.counter
+            79
+        = link_to '#', class: 'gl-btn gl-large-btn gl-btn-color-1' do
+          %span.text
+            = t('select_town.towns.polt')
+          %span.counter
+            26
+        = link_to '#', class: 'gl-btn gl-large-btn gl-btn-color-1' do
+          %span.text
+            = t('select_town.towns.luts')
+          %span.counter
+            30
+        = link_to '#', class: 'gl-btn gl-large-btn gl-btn-color-1' do
+          %span.text
+            = t('select_town.towns.dnipr')
+          %span.counter
+            54
+        = link_to '#', class: 'gl-btn gl-large-btn gl-btn-color-1' do
+          %span.text
+            = t('select_town.towns.chern')
+          %span.counter
+            7
+      .col-xs-12.col-md-4
+        = link_to '#', class: 'gl-btn gl-large-btn gl-btn-color-1' do
+          %span.text
+            = t('select_town.towns.zapor')
+          %span.counter
+            15
+        = link_to '#', class: 'gl-btn gl-large-btn gl-btn-color-1' do
+          %span.text
+            = t('select_town.towns.kyiv_area')
+          %span.counter
+            300
+        = link_to '#', class: 'gl-btn gl-large-btn gl-btn-color-1' do
+          %span.text
+            = t('select_town.towns.hmeln')
+          %span.counter
+            78
+        = link_to '#', class: 'gl-btn gl-large-btn gl-btn-color-1' do
+          %span.text
+            = t('select_town.towns.rivne')
+          %span.counter
+            45
+        = link_to '#', class: 'gl-btn gl-large-btn gl-btn-color-1' do
+          %span.text
+            = t('select_town.towns.lvov')
+          %span.counter
+            183
+        = link_to '#', class: 'gl-btn gl-large-btn gl-btn-color-1' do
+          %span.text
+            = t('select_town.towns.jitom')
+          %span.counter
+            14
+      .col-xs-12.col-md-4
+        = link_to '#', class: 'gl-btn gl-large-btn gl-btn-color-1' do
+          %span.text
+            = t('select_town.towns.odes')
+          %span.counter
+            145
+        = link_to '#', class: 'gl-btn gl-large-btn gl-btn-color-1' do
+          %span.text
+            = t('select_town.towns.ivan-fr')
+          %span.counter
+            54
+        = link_to '#', class: 'gl-btn gl-large-btn gl-btn-color-1' do
+          %span.text
+            = t('select_town.towns.vin')
+          %span.counter
+            40
+        = link_to '#', class: 'gl-btn gl-large-btn gl-btn-color-1' do
+          %span.text
+            = t('select_town.towns.cherk')
+          %span.counter
+            19
+        = link_to '#', class: 'gl-btn gl-large-btn gl-btn-color-1' do
+          %span.text
+            = t('select_town.towns.sym')
+          %span.counter
+            12
+        = link_to '#', class: 'gl-btn gl-large-btn gl-btn-color-1' do
+          %span.text
+            = t('select_town.towns.nik')
+          %span.counter
+            17
