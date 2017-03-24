@@ -5012,13 +5012,13 @@ button.close {
 }
 /* FONT PATH
  * -------------------------- */
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.5.0');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+/*@font-face {*/
+  /*font-family: 'FontAwesome';*/
+  /*src: url('../fonts/fontawesome-webfont.eot?v=4.5.0');*/
+  /*src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');*/
+  /*font-weight: normal;*/
+  /*font-style: normal;*/
+/*}*/
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -7091,13 +7091,6 @@ button.close {
 }
 .fa-percent:before {
   content: "\f295";
-}
-@font-face {
-  font-family: "Ionicons";
-  src: url("../fonts/ionicons.eot?v=2.0.0");
-  src: url("../fonts/ionicons.eot?v=2.0.0#iefix") format("embedded-opentype"), url("../fonts/ionicons.ttf?v=2.0.0") format("truetype"), url("../fonts/ionicons.woff?v=2.0.0") format("woff"), url("../fonts/ionicons.svg?v=2.0.0#Ionicons") format("svg");
-  font-weight: normal;
-  font-style: normal;
 }
 .ion,
 .ionicons,
@@ -10051,13 +10044,6 @@ Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
 https://twitter.com/benjsperry  https://twitter.com/ionicframework
 MIT License: https://github.com/driftyco/ionicons
 */
-@font-face {
-  font-family: 'et-line';
-  src: url('../fonts/et-line.eot');
-  src: url('../fonts/et-line.eot?#iefix') format('embedded-opentype'), url('../fonts/et-line.woff') format('woff'), url('../fonts/et-line.ttf') format('truetype'), url('../fonts/et-line.svg#et-line') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
   font-family: 'et-line';
@@ -10829,13 +10815,6 @@ you can use the generic selector below, but it's slower:
 [class^="pe-7s-"],
 [class*=" pe-7s-"] {
   display: inline-block;
-}
-@font-face {
-  font-family: 'Pe-icon-7-stroke';
-  src: url('../fonts/Pe-icon-7-stroke.eot?d7yf1v');
-  src: url('../fonts/Pe-icon-7-stroke.eot?#iefixd7yf1v') format('embedded-opentype'), url('../fonts/Pe-icon-7-stroke.woff?d7yf1v') format('woff'), url('../fonts/Pe-icon-7-stroke.ttf?d7yf1v') format('truetype'), url('../fonts/Pe-icon-7-stroke.svg?d7yf1v#Pe-icon-7-stroke') format('svg');
-  font-weight: normal;
-  font-style: normal;
 }
 [class^="pe-7s-"],
 [class*=" pe-7s-"] {
@@ -14277,16 +14256,6 @@ a:focus {
 .star-off-png,
 .star-half-png {
   font-size: 2em;
-}
-@font-face {
-  font-family: "raty";
-  font-style: normal;
-  font-weight: normal;
-  src: url("../fonts/raty.eot");
-  src: url("../fonts/raty.eot?#iefix") format("embedded-opentype");
-  src: url("../fonts/raty.svg#raty") format("svg");
-  src: url("../fonts/raty.ttf") format("truetype");
-  src: url("../fonts/raty.woff") format("woff");
 }
 .cancel-on-png,
 .cancel-off-png,
