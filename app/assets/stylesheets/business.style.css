@@ -25038,7 +25038,7 @@ header.gl-header .gl-header-bottombar .gl-header-main-menu .container-fluid .gl-
   color: #fc4a52;
 }
 .gl-hero-img-wrapper {
-  background: url('../images/hero-bg.jpg') center center no-repeat;
+  /*background: url('../images/hero-bg.jpg') center center no-repeat;*/
   background-size: cover;
 }
 .gl-hero-img-wrapper h2.gl-hero-text-heading .gl-color-text {
