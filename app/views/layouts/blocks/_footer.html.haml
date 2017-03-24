@@ -1,1 +1,69 @@
-Footer
+:scss
+  footer {
+    margin-top: 50px;
+    .mail-container {
+      display: initial;
+      a {
+        text-decoration: underline;
+      }
+    }
+    .gl-social-info-wrapper {
+      padding: 0;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    footer {
+      .gl-footer-bottom-wrapper .gl-social-info-wrapper {
+        width: 20%;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    footer {
+      .gl-social-info-wrapper {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .gl-copyright-info-wrapper {
+        width: 100%;
+        text-align: center!important;
+      }
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    footer .gl-social-info-wrapper {
+      width: 100%;
+    }
+  }
+
+%footer
+  .gl-footer-bottom-wrapper
+    .container-fluid
+      .row
+        .gl-copyright-info-wrapper.col-xs-12.col-sm-9.col-sm-offset-3.col-md-9.col-md-offset-2
+          %p
+            %span.copyright Copyright © 2016 АВТОШКОЛАONLINE. All rights reserved.
+            = t('bottom_footer.copyright')
+            %span.mail-container
+              = mail_to '1autoschoolonline@gmail.com'
+
+        %span.gl-social-info-wrapper.col-xs-12.col-md-1
+          %ul
+            %li
+              = link_to '#' do
+                = icon('facebook')
+            %li
+              = link_to '#' do
+                = icon('twitter')
+            %li
+              = link_to '#' do
+                = icon('behance')
+            %li
+              = link_to '#' do
+                = icon('dribbble')
+            %li
+              = link_to '#' do
+                = icon('vimeo')
