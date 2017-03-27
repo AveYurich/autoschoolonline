@@ -1,0 +1,46 @@
+:scss
+  .gl-page-header-wrapper {
+    background-image: url('assets/Image_01.png');
+    padding-bottom: 10px;
+    .gl-page-head-btn-wrapper {
+      padding-bottom: 40px;
+      .gl-btn {
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: white;
+        color: #1d1d1d;;
+      }
+      .gl-btn:hover {
+        background-color: #1d1d1d;
+        color: white;
+      }
+    }
+    .empty-star {
+      color: whitesmoke;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .school-title {
+      font-size: 30px!important;
+    }
+  }
+  
+%section.gl-page-header-wrapper
+  .container
+    .row
+      %h1.school-title Автошкола "Intensive driving"
+      %p
+      %span.gl-item-rating
+        3,8
+        %i.ion-ios-star
+        %i.ion-ios-star
+        %i.ion-ios-star
+        %i.ion-ios-star.empty-star
+        %i.ion-ios-star.empty-star
+      .gl-page-head-btn-wrapper
+        =link_to '#' do
+          %button.gl-btn
+            = t('autoschool_baner.rewiew_button')
+        =link_to '#' do
+          %button.gl-btn
+            = t('autoschool_baner.write_button')
