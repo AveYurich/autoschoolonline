@@ -31,12 +31,7 @@
       %h1.school-title Автошкола "Intensive driving"
       %p
       %span.gl-item-rating
-        3,8
-        %i.ion-ios-star
-        %i.ion-ios-star
-        %i.ion-ios-star
-        %i.ion-ios-star.empty-star
-        %i.ion-ios-star.empty-star
+        = stars_generator(4.9).html_safe
       .gl-page-head-btn-wrapper
         =link_to '#' do
           %button.gl-btn
