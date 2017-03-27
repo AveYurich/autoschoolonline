@@ -24,4 +24,5 @@
 .byebug_history
 /.sass-cache/
 
-/public/*
+#/public/*
+!/assets/Image_01.png
