@@ -1,0 +1,68 @@
+:scss
+  .short-info-container {
+    margin-top: 50px;
+    height: 200px;
+    .short-info-image {
+      img {
+        width: 100%;
+        height: 200px;
+        padding-right: 15px;;
+      }
+    }
+    .short-info-text {
+      padding-left: 15px;
+    }
+    .short-info-text > div {
+      margin-top: 27px;
+    }
+    .no-margin {
+      margin: 0;
+    }
+    .no-padding {
+      padding: 0;
+    }
+    .background-color {
+      background-color: #f9f9f9;
+    }
+  }
+  @media only screen and ( max-width: 991px ) {
+    .short-info-container {
+      .short-info-image {
+        img {
+          padding-right: 0;
+        }
+      }
+      .short-info-text {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+
+.short-info-container.container.fadeIn.appear
+  .row.no-margin.background-color
+    .col-xs-12.col-md-4.short-info-image.no-padding
+      = image_tag 'business-img-1.jpg'
+    .col-xs-12.col-md-8.container-fluid.no-padding
+      .short-info-text
+        .address
+          .fa-stack
+            .fa-stack-1x
+              = icon('map-marker')
+            .fa-stack-2x
+              = icon('circle-thin')
+          = t('short_info.address')
+        .phone
+          .fa-stack
+            .fa-stack-1x
+              = icon('phone')
+            .fa-stack-2x
+              = icon('circle-thin')
+          = t('short_info.phone')
+        .site
+          .fa-stack
+            .fa-stack-1x
+              = icon('chain-broken')
+            .fa-stack-2x
+              = icon('circle-thin')
+          = t('short_info.site')
