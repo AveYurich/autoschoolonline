@@ -1,11 +1,11 @@
 module HomeHelper
 
   def stars_generator(count = 0)
-    tmp = ''
+    result = ''
     5.times do |i|
-      tmp.concat(made_stars(count - 1 >= i ))
+      result.concat(made_stars(count - 1 >= i ))
     end
-    tmp
+    result
   end
 
   private
