@@ -1,0 +1,2 @@
+module AutoschoolsHelper
+end
