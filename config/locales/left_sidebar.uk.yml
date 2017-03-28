@@ -1,0 +1,13 @@
+uk:
+  left_sidebar:
+    categories:
+      category: "Категорії:"
+      price: "Вартість: <p> від"
+      cars: "Навчальні авто:"
+    rating:
+      rating_title: "Оцінка автошколи:"
+      overall_rating: "Загальна оцінка"
+      car: "Автомобіль"
+      instructor: "Інструктор"
+      theory: "Теорія"
+      price: "Вартість"
