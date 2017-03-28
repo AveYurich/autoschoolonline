@@ -4,5 +4,6 @@ class HomeController < ApplicationController
   end
 
   def show
+    render 'autoschool/index'
   end
 end

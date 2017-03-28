@@ -1,0 +1,13 @@
+ru:
+  left_sidebar:
+    categories:
+      category: "Категории:"
+      price: "Стоимость: <p>от"
+      cars: "Учебные автомобили:"
+    rating:
+      rating_title: "Оценка автошколы:"
+      overall_rating: "Общая оценка"
+      car: "Автомобиль"
+      instructor: "Инструктор"
+      theory: "Теория"
+      price: "Стоимость"

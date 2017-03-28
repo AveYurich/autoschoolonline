@@ -1,0 +1,106 @@
+:scss
+  .left-side-bar {
+    font-size: 18px;
+    .box-size   {
+      height: 300px;
+      width: 365px;
+      margin-top: 15px;
+    }
+    .categories-container,
+    .rating-container {
+      background-color: #f9f9f9;
+      .text-block {
+        padding: 35px 35px 35px 20px;
+        .title {
+          font-weight: 600;
+        }
+        .subtitle {
+          font-weight: 400;
+        }
+      }
+    }
+    .categories-container {
+       height: 250px;
+    }
+    .rating-container {
+      height: 320px;
+      .rating-title {
+        margin-bottom: 10px;
+      }
+      .stars-line {
+        padding-right: 10px;
+        display: inline-block;
+      }
+    }
+    .review-btn-box {
+      text-align: center;
+      .review-btn-style {
+        background-color: #222222;
+        border-color: #222222;
+        color: white;
+        margin-top: -30px;
+        padding: 15px;
+      }
+    }
+  }
+
+
+.left-side-bar.col-md-4
+  #map.box-size
+  .categories-container.box-size
+    .text-block
+      .title
+        = t('left_sidebar.categories.category').html_safe
+        %p.subtitle "A"; "B"; "C"; "D";
+      .title
+        = t('left_sidebar.categories.price').html_safe
+        %span.subtitle 2589грн
+      %p
+      .title
+        = t('left_sidebar.categories.cars').html_safe
+        %p.subtitle Лада, Ланос, Шкода, Шевроле
+  .rating-container.box-size
+    .text-block
+      .title.rating-title
+        = t('left_sidebar.rating.rating_title')
+      %p
+        .stars-line
+          5.0
+          = stars_generator(5).html_safe
+        = t('left_sidebar.rating.overall_rating')
+      %p
+        .stars-line
+          5.0
+          = stars_generator(5).html_safe
+        = t('left_sidebar.rating.car')
+      %p
+        .stars-line
+          5.0
+          = stars_generator(5).html_safe
+        = t('left_sidebar.rating.instructor')
+      %p
+        .stars-line
+          5.0
+          = stars_generator(5).html_safe
+        = t('left_sidebar.rating.theory')
+      %p
+        .stars-line
+          5.0
+          = stars_generator(5).html_safe
+        = t('left_sidebar.rating.price')
+    .review-btn-box
+      .btn.btn-default.review-btn-style
+        = t(:review_button)
+
+
+
+:javascript
+  function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: -34.397, lng: 150.644},
+      scrollwheel: false,
+      zoom: 8
+    });
+  }
+
+%script{:async => "", :defer => "defer", :src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyAVy30Jnz4RYOCNjXg9cF6oW8yzOk-iPkg&callback=initMap"}
