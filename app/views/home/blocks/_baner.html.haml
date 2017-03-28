@@ -1,7 +1,7 @@
 :scss
   .gl-hero-img-wrapper {
     background: url('assets/hero-bg.jpg') center center no-repeat;
-    background-size: cover
+    background-size: cover;
   }
 
 / HERO IMAGE
@@ -32,9 +32,11 @@
               .gl-business-category.gl-category-dropdown
                 %select.gl-category-dropdown-selection
                   %option  
-                  %option{ value: 'Corp' } Corporate
-                  %option{ value: 'Pub' } Public
-                  %option{ value: 'Int' } International
+                  %option{ value: 'A, A1' } A, A1
+                  %option{ value: 'B, B1' } B, B1
+                  %option{ value: 'C, C1' } C, C1
+                  %option{ value: 'D, D1' } D, D1
+                  %option{ value: 'BE, C1E, CE, D1E, DE' } BE, C1E, CE, D1E, DE
             %button.gl-icon-btn{ type: 'submit' }
               %i.fa.fa-search
               = t('baner.search')
@@ -42,6 +44,7 @@
         .gl-scroll-down-wrapper
           %a.gl-scroll-down{ href: '#gl-next-section' }
             %i.ion-chevron-down
+#gl-next-section
 / HERO IMAGE END
 
 :javascript

@@ -1,5 +1,8 @@
 :scss
   footer {
+    .gl-footer-bottom-wrapper {
+      color: #5b5b5b;
+    }
     .mail-container {
       display: initial;
       a {
@@ -9,12 +12,20 @@
     .gl-social-info-wrapper {
       padding: 0;
     }
+    .have-question {
+      //width: 65%;
+      padding: 0;
+      margin-left: 100px;
+    }
+    .gl-copyright-info-wrapper {
+      display: inline;
+    }
   }
 
   @media only screen and (min-width: 992px) {
     footer {
-      .gl-footer-bottom-wrapper .gl-social-info-wrapper {
-        width: 20%;
+      .gl-social-info-wrapper {
+        width: 14%;
       }
     }
   }
@@ -23,12 +34,19 @@
     footer {
       .gl-social-info-wrapper {
         width: 100%;
-        text-align: center;
+        text-align: center!important;
         margin-top: 20px;
       }
       .gl-copyright-info-wrapper {
         width: 100%;
         text-align: center!important;
+      }
+      .copyright,
+      .have-question {
+        text-align: center;
+      }
+      .have-question {
+        margin: 0;
       }
     }
   }
@@ -36,33 +54,45 @@
     footer .gl-social-info-wrapper {
       width: 100%;
     }
+    .copyright,
+    .have-question {
+      text-align: center;
+    }
+    .have-question {
+      margin: 0!important;
+    }
   }
 
 %footer
   .gl-footer-bottom-wrapper
     .container-fluid
       .row
-        .gl-copyright-info-wrapper.col-xs-12.col-sm-9.col-sm-offset-3.col-md-9.col-md-offset-2
-          %p
-            %span.copyright Copyright © 2016 АВТОШКОЛАONLINE. All rights reserved.
-            = t('bottom_footer.copyright')
-            %span.mail-container
-              = mail_to '1autoschoolonline@gmail.com'
+        -#.gl-copyright-info-wrapper.col-xs-12.col-sm-9.col-sm-offset-3.col-md-11.col-md-offset-2
+        -#  %p
+        -#    %span.copyright Copyright © 2017 АВТОШКОЛАONLINE. All rights reserved.
+        -#    %span.have-question
+        -#      = t('bottom_footer.copyright')
+        -#      %span.mail-container
+        -#        = mail_to '1autoschoolonline@gmail.com'
+        -#.gl-copyright-info-wrapper
 
-        %span.gl-social-info-wrapper.col-xs-12.col-md-1
+        %span.copyright.col-xs-12.col-md-3.col-md-offset-1 Copyright © 2017 АВТОШКОЛАONLINE. All rights reserved.
+        %span.have-question.col-xs-12.col-md-4.col-md-offset-1
+          = t('bottom_footer.copyright')
+          %span.mail-container
+            = mail_to '1autoschoolonline@gmail.com'
+
+        %span.gl-social-info-wrapper.col-xs-12.col-md-2
           %ul
             %li
               = link_to '#' do
                 = icon('facebook')
             %li
               = link_to '#' do
-                = icon('twitter')
+                = icon('vk')
             %li
               = link_to '#' do
-                = icon('behance')
+                = icon('google-plus')
             %li
               = link_to '#' do
-                = icon('dribbble')
-            %li
-              = link_to '#' do
-                = icon('vimeo')
+                = icon('instagram')

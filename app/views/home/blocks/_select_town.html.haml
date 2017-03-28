@@ -1,6 +1,7 @@
 :scss
   .select_town {
-    padding-top: 15px;
+    margin-bottom: 1000px;
+    padding-top: 55px;
     padding-bottom: 25px;
     .container {
       .row {
@@ -22,17 +23,27 @@
       .titles {
         padding-bottom: 15px;
       }
+      .first-title {
+        font-size: 30px;
+        font-weight: 400;
+        color: #454545;
+      }
+      .second-title {
+        font-size: 15px;
+        font-weight: 300;
+        color: #888888;
+      }
       .buttons {
         padding-bottom: 15px;
       }
     }
   }
-%section.select_town
+%section.select_town#gl-next-section
   .container
     .row.titles
-      %p.gl-hero-text-paragraph.text-center.no-margin
+      %p.gl-hero-text-paragraph.text-center.no-margin.first-title
         = t('select_town.title')
-      %p.gl-hero-text-paragraph.text-center.no-margin
+      %p.gl-hero-text-paragraph.text-center.no-margin.second-title
         = t('select_town.choose')
     .row.buttons
       .col-xs-12.col-md-4
