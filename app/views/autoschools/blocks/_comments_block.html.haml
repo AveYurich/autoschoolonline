@@ -1,0 +1,81 @@
+:scss
+  .comments-block-container {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    .head-block {
+      .comments-title {
+        font-size: 20px;
+      }
+      .review-btn-box {
+        text-align: right;
+      }
+    }
+    .single-comment {
+      padding: 20px;
+      margin-top: 15px;
+      background-color: white;
+      .user-name,
+      .single-comment-date {
+        display: inline-block;
+      }
+      .single-comment-date {
+        float: right;
+      }
+      .comment-text {
+        margin-top: 10px;
+      }
+      .single-comment-footer {
+        margin-top: 10px;
+        .single-comment-school-rating {
+          display: inline-block;
+        }
+        .single-comment-self-rating {
+          display: inline-block;
+          float: right;
+        }
+      }
+    }
+  }
+
+.container
+  .row
+    .comments-block-container.col-md-offset-4.col-md-8
+      .head-block
+        .comments-title
+          = t('autoschool_comments.title')
+          "Жайворонок" (2)
+        .review-btn-box
+          .btn.btn-default.review-btn-style
+            = t(:review_button)
+      .single-comment
+        .user-name АННА
+        .single-comment-date 22.01.17
+        .comment-text
+          АВТОШКОЛА действительно обучает нормально и самое главное не 8 занятий а полный курс.
+          Как можно научится за 8 занятий? Со мной Николай Иванович 20 занятий провел, что бы получились люди. Спасибо.
+        .single-comment-footer
+          .single-comment-school-rating
+            3,8
+            = stars_generator(3.8).html_safe
+          .single-comment-self-rating
+            = icon('long-arrow-down')
+            48
+            = icon('long-arrow-up')
+            = link_to '#' do
+              = t('autoschool_comments.answer')
+      .single-comment
+        .user-name АННА
+        .single-comment-date 22.01.17
+        .comment-text
+          АВТОШКОЛА действительно обучает нормально и самое главное не 8 занятий а полный курс.
+          Как можно научится за 8 занятий? Со мной Николай Иванович 20 занятий провел, что бы получились люди. Спасибо.
+        .single-comment-footer
+          .single-comment-school-rating
+            3,8
+            = stars_generator(3.8).html_safe
+          .single-comment-self-rating
+            = icon('long-arrow-down')
+            48
+            = icon('long-arrow-up')
+            = link_to '#' do
+              = t('autoschool_comments.answer')

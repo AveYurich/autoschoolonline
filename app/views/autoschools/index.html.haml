@@ -1,5 +1,14 @@
-= render partial: 'autoschools/blocks/autoschool_baner'
-= render partial: 'autoschools/blocks/short_info'
-.container
-  .row
-    = render partial: 'autoschools/blocks/left_sidebar'
+:scss
+  .autoschool-container {
+    background-color: #f1f1f1;
+  }
+
+.autoschool-container
+  = render partial: 'autoschools/blocks/autoschool_baner'
+  = render partial: 'autoschools/blocks/short_info'
+  .container
+    .row
+      = render partial: 'autoschools/blocks/left_sidebar'
+      = render partial: 'autoschools/blocks/description_block'
+  =render partial: 'autoschools/blocks/photos_block'
+  =render partial: 'autoschools/blocks/comments_block'
