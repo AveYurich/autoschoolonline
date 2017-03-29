@@ -1,0 +1,25 @@
+:scss
+  .photos-block-container {
+    margin-top: 15px;
+    .image-container {
+      padding-right: 4px;
+      padding-left: 4px;
+      img {
+        border: 1px solid #A7A7A7;
+      }
+    }
+  }
+
+.container
+  .row
+    .photos-block-container.col-md-offset-4.col-md-8
+      .container-fluid
+        .row
+          .image-container.col-xs-3
+            = image_tag 'business-img-1.jpg'
+          .image-container.col-xs-3
+            = image_tag 'business-img-1.jpg'
+          .image-container.col-xs-3
+            = image_tag 'business-img-1.jpg'
+          .image-container.col-xs-3
+            = image_tag 'business-img-1.jpg'
