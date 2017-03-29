@@ -19,6 +19,9 @@
     .empty-star {
       color: whitesmoke;
     }
+    .heroku-btn-margin {
+      margin-right: 2px;
+    }
   }
   @media screen and (max-width: 991px) {
     .school-title {
@@ -38,7 +41,7 @@
         0
       .gl-page-head-btn-wrapper
         =link_to '#' do
-          %button.gl-btn
+          %button.gl-btn.heroku-btn-margin
             = t(:review_button)
         =link_to '#' do
           %button.gl-btn
