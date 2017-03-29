@@ -16,6 +16,9 @@
         //margin-left: -30px;
       }
     }
+    .heroku-btn-margin {
+      margin-right: 2px;
+    }
   }
   .gl-fake-div {
     height: 60px;
@@ -83,7 +86,7 @@
           -#TODO: Need refactor
           - if I18n.locale == I18n.default_locale
             = link_to locale: I18n.default_locale do
-              %button.gl-btn.gl-btn-color-1
+              %button.gl-btn.gl-btn-color-1.heroku-btn-margin
                 UA
             = link_to locale: :ru do
               %button.gl-btn.gl-btn-color-1
